@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Vina Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+}
+
+h1 {
+  font-family: "Vina Sans", sans-serif;
+  color: rgb(24, 24, 24);
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 80px;
+  color: #26577c;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+/* farver */
+
 body {
-  background-color: antiquewhite;
+  background-color: #ebe4d1;
 }

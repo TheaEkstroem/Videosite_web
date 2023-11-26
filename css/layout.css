@@ -1,18 +1,69 @@
-video {
-  max-width: 80%;
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (min-width: 780px) {
+  body {
+    max-width: 100%;
+  }
+}
+
+iframe {
+  display: grid;
+  margin: auto;
+  margin-top: 10%;
 }
 
 img {
-  max-width: 100%;
+  max-width: 85%;
+  margin: auto;
 }
 
 body {
   margin: 3em;
 }
 
-.grid_1-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  margin: 1em;
+/* Slide show */
+
+.slideshow {
+  margin: auto;
+}
+
+.knap {
+  margin: auto;
+  align-items: center;
+  width: 20%;
+  padding: 6px;
+}
+
+.center {
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* slideshow knap */
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -300px;
+  padding: 10px;
+  color: rgb(41, 39, 39);
+  /*   font-weight: bold;
+ */
+  font-size: 16px;
+  transition: 0.6s ease;
+  border-radius: 0 2px 2px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }

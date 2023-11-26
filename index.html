@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,17 +7,37 @@
     <link rel="stylesheet" href="css/layout.css" />
     <title>Digital Kunst</title>
   </head>
-  <head></head>
+  <header></header>
+
   <body>
     <h1>Digital Kunst</h1>
 
-    <video controls src="interview_digitalkunst.mp4"></video>
+    <div class="slideshow">
+      <img class="slides" src="Billeder/landscape_draw.jpeg" alt="" />
+      <img class="slides" src="Billeder/landscape_far_langt.jpeg" alt="" />
+      <img class="slides" src="Billeder/landscape_farsidder.jpeg" alt="" />
+      <img class="slides" src="Billeder/landscape_ipad.jpeg" alt="" />
+      <img class="slides" src="Billeder/landscape_farsidder_væk.jpeg" alt="" />
+      <img class="slides" src="Billeder/IMG_4668.jpeg" alt="" />
 
-    <div class="grid_1-1-1-1">
-      <div><img src="Billeder/closeup_hands.jpeg" alt="" /></div>
-      <div><img src="Billeder/sitting_.jpeg" alt="" /></div>
-      <div><img src="Billeder/draw.jpeg" alt="" /></div>
-      <div><img src="Billeder/sit.jpeg" alt="" /></div>
+      <div class="center">
+        <button class="knap prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="knap next" onclick="plusDivs(+1)">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="grid_1-1">
+      <div class="video">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/guLYloL-UWE?si=ckT7mW63OD_LC4cf"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <p>
@@ -29,4 +49,6 @@
   </body>
 
   <footer>&copy; Thea Frese Ekstrøm 2023</footer>
+
+  <script src="javascript/javascript.js"></script>
 </html>
