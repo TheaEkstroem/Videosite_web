@@ -1,21 +1,26 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+/* slideshow */
 
-function plusDivs(n) {
-  showDivs((slideIndex += n));
-}
+var img = document.getElementById("img");
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  if (n > x.length) {
-    slideIndex = 1;
+var slides = [
+  "Billeder/landscape_far_langt.jpeg",
+  "Billeder/landscape_farsidder.jpeg",
+  "Billeder/landscape_ipad.jpeg",
+  "Billeder/landscape_farsidder_væk.jpeg",
+  "Billeder/IMG_4668.jpeg",
+];
+
+var Start = 0;
+
+var Start = 0;
+
+function slider() {
+  if (Start < slides.length) {
+    Start = Start + 1;
+  } else {
+    Start = 1;
   }
-  if (n < 1) {
-    slideIndex = x.length;
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex - 1].style.display = "block";
+  console.log(img);
+  img.innerHTML = "<img src=" + slides[Start - 1] + ">";
 }
+setInterval(slider, 4000);

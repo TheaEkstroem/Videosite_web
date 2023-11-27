@@ -5,17 +5,27 @@
 
 h1 {
   font-family: "Vina Sans", sans-serif;
-  color: rgb(24, 24, 24);
   font-size: 100px;
   font-weight: 400;
-  line-height: 80px;
+  line-height: 70px;
   color: #26577c;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Vina Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  color: #26577c;
+  text-align: center;
 }
 
 p {
   font-family: "Courier New", Courier, monospace;
   color: black;
   font-size: 18px;
+  font-weight: 600;
   line-height: 30px;
 }
 
@@ -26,8 +36,21 @@ footer {
   line-height: 30px;
 }
 
+a {
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
 /* farver */
 
 body {
-  background-color: #ebe4d1;
+  background-image: url(/Billeder/background.jpg);
+  height: 100%;
+}
+
+hr {
+  color: #26577c;
 }
